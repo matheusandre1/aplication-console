@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WmI3nabqP9HamxqeeKh1m1qU33TZMOOFXA0o0dh4UOrxIsCPOrtfc8RdjHArkN9P+Ytxkfu+0aqSoNzAs81LbQ==",
+  "dgSpecHash": "1zG+0Jzje6Vd10AcPNOvcEpaW5neKtPoAZ2JWgTwc2dsmurrr6yhyrYqFWsCetk7gHS958VNmw1ziOBOtLw69A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\USER\\Revisao\\Revisao.csproj",
+  "projectFilePath": "C:\\Users\\USER\\Revisao\\aplication-console\\Revisao.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -18,8 +18,8 @@ namespace Revisao
           case "1":
             Console.WriteLine("Informe o nome do aluno:");
             var aluno = new Aluno();
-            aluno.Nome = ReadLine();
-            WriteLine("Informe a nota do aluno:");
+            aluno.Nome = Console.ReadLine();
+            Console.WriteLine("Informe a nota do aluno:");
 
             if (decimal.TryParse(Console.ReadLine(), out decimal nota))
             {
@@ -61,11 +61,30 @@ namespace Revisao
 
             var mediaGeral = notaTotal / nrAlunos;
 
+            Conceito conceitoGeral;
 
+            if (mediaGeral < 2)
+            {
+              conceitoGeral = Conceito.E;
+            }
+            else if (mediaGeral < 4)
+            {
+              conceitoGeral = Conceito.D;
+            }
+            else if (mediaGeral < 6)
+            {
+              conceitoGeral = Conceito.C;
+            }
+            else if (mediaGeral < 8)
+            {
+              conceitoGeral = Conceito.B;
+            }
+            else
+            {
+              conceitoGeral = Conceito.A;
+            }
 
-
-
-            Console.WriteLine($"Média Geral: {mediaGeral}");
+            Console.WriteLine($"Media Geral: {mediaGeral} - CONCEITO:{conceitoGeral}");
 
 
             break;
@@ -91,7 +110,7 @@ namespace Revisao
       Console.WriteLine("X- Sair");
       Console.WriteLine();
 
-      string opcaoUsuario = ReadLine();
+      string opcaoUsuario = Console.ReadLine();
       Console.WriteLine();
       return opcaoUsuario;
     }
